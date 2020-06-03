@@ -129,3 +129,5 @@ dmypy.json
 .pyre/
 
 Datos/04_words_data_s/
+
+Datos/06_words_fixed/
