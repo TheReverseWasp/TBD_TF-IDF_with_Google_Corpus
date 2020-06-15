@@ -27,15 +27,11 @@ def main():
         if it % 1000 == 0:
             print("it:", it)
         it += 1
-        max_Value = -100
         tempDic = {}
         for k, v in wordsDic.items():
             if key in v:
                 tempDic[k] = v[key]
-                if v[key] > max_Value:
-                    max_Value = v[key]
-        tempDic = {x: tempDic[x] / max_Value for x in tempDic}
-        with open("../Datos/06_words_fixed/stg1/" + key + ".json", "w") as outputFile:
+        with open("../Datos/06_words_fixed/stg0/" + key + ".json", "w") as outputFile:
             json.dump(tempDic, outputFile)
     print("Proceso Finalizado")
 
